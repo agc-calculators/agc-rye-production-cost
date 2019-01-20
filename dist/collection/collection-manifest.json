@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-rye-production-cost",
+      "dependencies": [],
+      "componentClass": "AgcRyeProductionCost",
+      "componentPath": "components/agc-rye-production-cost/agc-rye-production-cost.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-production-cost-inputs",
+      "dependencies": [],
+      "componentClass": "AgcRyeProductionCostInputs",
+      "componentPath": "components/agc-rye-production-cost-inputs/agc-rye-production-cost-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-production-cost-progress",
+      "dependencies": [],
+      "componentClass": "AgcRyeProductionCostProgress",
+      "componentPath": "components/agc-rye-production-cost-progress/agc-rye-production-cost-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-production-cost-results",
+      "dependencies": [],
+      "componentClass": "AgcRyeProductionCostResults",
+      "componentPath": "components/agc-rye-production-cost-results/agc-rye-production-cost-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-production-cost-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcRyeProductionCostResultsPlaceholder",
+      "componentPath": "components/agc-rye-production-cost-results-placeholder/agc-rye-production-cost-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
